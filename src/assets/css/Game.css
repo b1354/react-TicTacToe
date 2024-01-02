@@ -1,0 +1,62 @@
+.game {
+  padding: 80px;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.game-board {
+  margin: 0 100px;
+}
+
+.game-info {
+  width: fit-content;
+  height: 18rem;
+  overflow: scroll;
+  margin: auto;
+  padding: 5px;
+  ol {
+    width: fit-content;
+    padding-inline-start: 0;
+    margin: auto;
+  }
+  li {
+    list-style: none;
+  }
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #242424;
+    cursor: pointer;
+    width: 15rem;
+    margin: 5px 0;
+    transition: 900ms;
+    animation: fadein 2s;
+  }
+}
+
+.game-info::-webkit-scrollbar {
+  width: 8px;
+  background-color: none;
+}
+
+.game-info::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 50px;
+}
+
+.game-info::-webkit-scrollbar-thumb:hover {
+  background-color: #242424;
+}
+
+.game-info::-webkit-scrollbar-corner {
+  background-color: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .game {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+}
